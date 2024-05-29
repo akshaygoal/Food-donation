@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  background-image: url("../img/food_donation02.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;  
+  align-items: center;  
+  justify-content: center;
+  background: #ffffff;
+}
+
+.wrapper1{
+  min-height: 100%;
+}
+
+nav{
+  width: 100%;
+  background-color: #023E8A;
+  height: 100px;
+  line-height: 20px;
+  
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid white;
+}
+
+.logo {  
+  size: 100%;  
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.f3{
+  margin: 0px;  
+  margin-right: 70px;
+  margin-top: 10px;  
+  position: relative;
+}
+.f3 li{
+  float: left;
+  padding: 0px 10px;
+  margin-top: 30px;
+  list-style: none;
+  border-right: 2px solid rgb(122, 106, 106);
+  height: 20px;
+  
+}
+
+.f3 li a:hover{
+  color: #D00000;
+}
+ul li:last-child { 
+  border-right: none;  
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: 0.5s all ease;
+  
+}
+
+
+
+
+.wrapper{
+  max-width: 430px;
+  width: 100%;
+  margin: 50px auto;
+  background: rgb(0, 162, 255);
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  position: relative;
+}
+.wrapper h2{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.wrapper h2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #4070f4;
+}
+.wrapper form{
+  margin-top: 30px;
+}
+.wrapper form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid{
+  border-color: #4070f4;
+}
+form .policy{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    white-space: nowrap;
+    color: rgb(43, 43, 43);
+    width: 100%;
+    text-align: center;
+    font-weight: 1000;
+    ;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #100792;
+  cursor: pointer;
+}
+.input-box.button input:hover{
+  background: #0e4bf1;
+}
+form .text h3{
+ color: #333;
+ width: 100%;
+ text-align: center;
+}
+form .text h3 a{
+  color: #4070f4;
+  text-decoration: none;
+}
+form .text h3 a:hover{
+  text-decoration: underline;
+}
+form h4{    
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;    
+}
+
+.item {
+    white-space: nowrap;
+    display:inline;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+.container {
+  margin-top: 100px;
+  padding: 32px;
+}
+
+.select-box {
+  display: flex;
+  width: 360px;
+  flex-direction: column;
+}
+
+.select-box .options-container {
+  background: #2f3640;
+  color: #f5f6fa;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 8px;
+  overflow: hidden;
+
+  order: 1;
+}
+
+.selected {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #707070;
+  position: relative;
+
+  order: 0;
+}
+
+.selected::after {
+  content: "";
+  background: url("img/arrow-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 10px;
+  top: 5px;
+
+  transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.select-box .options-container.active + .selected::after {
+  transform: rotateX(180deg);
+  top: -6px;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background: #0d141f;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+  background: #525861;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .option,
+.selected {
+  padding: 12px 15px;
+  cursor: pointer;
+}
+
+.select-box .option:hover {
+  background: #414b57;
+}
+
+.select-box label {
+  cursor: pointer;
+}
+
+.select-box .option .radio {
+  display: none;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 350px;
+  
+}
+
+.footer .footer-bottom{
+  background: #ffc300;
+  color: #000000;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+
+/*LOGIN MODAL*/
+
+button {
+  display: flex;
+  height: 2rem;
+  width: auto;
+  margin: 10px;
+  align-self: center; 
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  background-color: #E85D04;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+button:hover, focus {
+  background-color: #DC2F02;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container {
+  width: 400px;
+  height: auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 40px 30px;
+}
+
+.container .login-text {
+  color: #151c46;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  text-transform: capitalize;
+}
+
+.container .login-email .input-group {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 25px;
+  padding: 3px;
+}
+
+.container .login-email .input-group input {
+  width: 87%;
+  border: 2px solid #e7e7e7;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  background: transparent;
+  outline: none;
+  transition: 0.3s;
+}
+
+.container .login-email .input-group input:focus,
+.container .login-email .input-group input:valid {
+  border-color: #eb5c34;
+}
+
+/* .container .login-email .input-group .btn__login {
+  display: block;
+  width: 50%;
+  padding: 15px 20px;
+  text-align: center;
+  border: none;
+  background: #64bcbe;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+} */
+
+.container .login-email .input-group .btn:hover {
+  transform: translateY(-5px);
+  background: #64bcbe;
+}
+
+.login-register-text {
+  color: #151c46;
+  font-weight: 600;
+}
+
+.login-register-text a {
+  text-decoration: none;
+  color: #DC2F02;
+}

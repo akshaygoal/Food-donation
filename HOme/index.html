@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Happy Tummy | HOME</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <nav>
+          <img src="../HOme/img/Logo.PNG" alt="" class="logo" />
+
+          <ul class="f3">
+            <li><a href="../HOme/index.html">HOME</a></li>
+
+            <li><a href="../map locatoer/index.html">STORES</a></li>
+
+            <li><a href="../Donation/index.html">DONATE</a></li>
+
+            <li><a href="../About us/about.html">ABOUT US</a></li>
+
+            <li><a href="../contact/contact us.html">CONTACT US</a></li>
+          </ul>
+          <button class="btn btn--show-modal btn--open--login-modal active">
+            Login/Register
+          </button>
+        </nav>
+      </div>
+
+      <div class="container modal modal__login hidden">
+        <button class="btn--close-modal btn--close--login-modal">
+          &times;
+        </button>
+        <form action="" method="POST" class="login-email login-form">
+          <p class="login-text" style="font-size: 2rem; font-weight: 800">
+            Login
+          </p>
+          <div class="input-group">
+            <input type="email" placeholder="Email" name="email" required />
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <center>
+              <button name="submit" class="btn__login">Login</button>
+            </center>
+          </div>
+          <p class="login-register-text" style="text-align: center">
+            Don't have an account?
+            <a href="#0" class="open--register">Register Here</a>.
+          </p>
+        </form>
+      </div>
+      <div class="container modal modal__register hidden">
+        <button class="btn--close-modal btn--close--register-modal">
+          &times;
+        </button>
+        <form action="" method="POST" class="login-email register-form">
+          <p class="login-text" style="font-size: 2rem; font-weight: 800">
+            Register
+          </p>
+          <div class="input-group">
+            <input
+              type="text"
+              placeholder="Username"
+              name="username"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input type="email" placeholder="Email" name="email" required />
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              name="cpassword"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <center>
+              <button name="submit" class="btn__login">Register</button>
+            </center>
+          </div>
+          <p class="login-register-text" style="text-align: center">
+            Have an account? <a href="#0" class="open--login">Login Here</a>.
+          </p>
+        </form>
+      </div>
+
+      <div class="overlay hidden"></div>
+      <div class="middle-section">
+        <h1>Daily Feeding Program</h1>
+        <h2>We Help The Poor And Needy</h2>
+
+        <a href="../Donation/index.html" id="f1">Donate Here</a>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-bottom">
+        &copy; HappyTummy.com | Designed by Akshay Kumar
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

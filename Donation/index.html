@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <title>Happy Tummy | DONATE</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Tummy | DONATE</title>
+    <link rel="stylesheet" href="style.css">
+    
+   </head>
+<body>
+  <div class="wrapper1"> 
+    <div class="header">
+      
+      <nav>
+          
+        <img src="../HOme/img/Logo.PNG" alt="" class="logo">
+        
+        <ul class="f3">
+          <li><a href="../HOme/index.html">HOME</a></li>
+          
+          <li><a href="../map locatoer/index.html">STORES</a></li>
+          
+          <li><a href="../Donation/index.html">DONATE</a></li>
+          
+          <li><a href="../About us/about.html">ABOUT US</a></li>
+          
+          <li><a href="../contact/contact us.html">CONTACT US</a></li>
+        </ul>
+        <button class="btn btn--show-modal btn--open--login-modal active">Login/Register</button>  
+     </nav>
+     
+     </div>
+
+     <!-- LOgin page contents -->
+
+     <div class="container modal modal__login hidden">
+      <button class="btn--close-modal btn--close--login-modal">&times;</button>
+      <form action="" method="POST" class="login-email login-form">
+        <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
+        <div class="input-group">
+          <input type="email" placeholder="Email" name="email"  required>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Password" name="password"  required>
+        </div>
+        <div class="input-group">
+          <center><button name="submit" class="btn__login" >Login</button></center>
+        </div>
+        <p class="login-register-text" style="text-align: center;">Don't have an account? <a href="#0" class="open--register">Register Here</a>.</p>
+      </form>
+    </div>
+    <div class="container modal modal__register hidden">
+      <button class="btn--close-modal btn--close--register-modal">&times;</button>
+      <form action="" method="POST" class="login-email register-form">
+              <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
+        <div class="input-group">
+          <input type="text" placeholder="Username" name="username"  required>
+        </div>
+        <div class="input-group">
+          <input type="email" placeholder="Email" name="email"  required>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Password" name="password" required>
+              </div>
+              <div class="input-group">
+          <input type="password" placeholder="Confirm Password" name="cpassword" required>
+        </div>
+        <div class="input-group">
+          <center><button name="submit" class="btn__login">Register</button></center>
+        </div>
+        <p class="login-register-text"  style="text-align: center;">Have an account? <a href="#0" class="open--login">Login Here</a>.</p>
+      </form>
+    </div>
+
+    <div class="overlay hidden"></div>
+     <div class="middle-section">
+
+
+     <!-- DOnate Form -->
+
+     
+  <div class="wrapper">
+    <h1>Donate Here</h1>
+    <h2>User Details</h2>
+    <form action="#" onSubmit = "returndonation(this)">
+      
+      <div class="input-box">
+        <input type="text" placeholder="Name of Food" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Quantity" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Expected Expiry of Food" required>
+      </div>
+
+
+      <div class="select-box">
+        <div class="options-container">
+          <div class="option">
+            <input type="radio" class="radio" id="automobiles" name="category"/>
+            <label for="automobiles">Oasis Centre, Koramangala</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="film" name="category" />
+            <label for="film">The Forum Mall, Koramangala</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="science" name="category" />
+            <label for="science">Gopalan Innovation Mall, Bannerghatta Main Rd</label>
+          </div>          
+        </div>
+
+        <div class="selected">
+          Select Store Location
+        </div>
+      </div>
+    
+
+    
+
+
+      <div class="pornp">        
+        <h4>Packaged or not Packaged?</h4>
+      </div>
+      
+      <table id="tblFruits">
+        <tr>
+            <td><input id="chkMango" type="checkbox" value="1"/><label for="chkMango">Processed food/commodities</label></td>
+        </tr>
+        <tr>
+            <td><input id="chkApple" type="checkbox" value="2"/><label for="chkApple">Cooked food</label></td>
+        </tr>
+        
+        </table>
+
+
+      <!-- <div id="foodtype">
+        <input type="checkbox" id="a" value="1"><label for="a">Processed food/commodities</label>        
+    
+        <input type="checkbox" id="b" value="2"><label for="b">Cooked food</label>
+          </div>  -->
+
+
+      <div class="policy">
+        <input type="checkbox" id="agrement">
+        <label for="agrement">I accept all terms & conditions</label>
+      </div>
+      <div class="input-box button">
+        <input type="Submit" input type="submit"class="btn-custom" name="formsubmit" onclick="checkPassword(form) " value="SUBMIT">
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+<div class="footer">    
+  <div class="footer-bottom">
+    &copy; HappyTummy.com | Designed by Akshay Kumar 
+  </div>
+</div>
+
+ 
+<script src="script.js"></script>
+</body>
+
+</html>
+
+ 

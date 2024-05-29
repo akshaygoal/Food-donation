@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("grid_12-825-55-15.css");
+
+html,
+body {
+  height: 87%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /*background-color: #03071E;*/
+  background-image: url("../HOme/img/BG_Image_png.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 50%;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  size: 100%;
+  background-repeat: no-repeat;
+  
+}
+nav {
+  width: 100%;
+  background-color: #023e8a;
+  
+  height: 100px;
+  line-height: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid white;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.logo {
+  size: 100%;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.f3 {
+  margin: 0px;
+
+  margin-top: 10px;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: 0.5s all ease;
+}
+
+.f3 li {
+  float: left;
+  padding: 0px 10px;
+  margin-top: 30px;
+  list-style: none;
+  border-right: 2px solid rgb(122, 106, 106);
+  height: 20px;
+}
+
+.f3 li a:hover {
+  color: #d00000;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-section {
+  float: right;
+}
+h1 {
+  float: right;
+  color: aliceblue;
+  margin-bottom: 0px;
+  margin-right: 100px;
+  margin-top: 120px;
+  font-size: 40px;
+  padding: 0px;
+}
+h2 {
+  color: aliceblue;
+  margin-right: 0px;
+
+  font-size: 25px;
+  padding: 0px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+p {
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+#f1 {
+  float: right;
+  display: grid;
+  width: 200px;
+  height: 60px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-top: 60px;
+  margin-right: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #e85d04;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+#f1:hover,
+.donatebtn:focus {
+  background-color: #dc2f02;
+}
+
+ul li:last-child {
+  border-right: none;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 350px;
+}
+
+.footer .footer-bottom {
+  background: #ffc300;
+  color: #000000;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+
+.f2 {
+  color: white;
+}
+
+.ref {
+  margin-left: 1220px;
+}
+
+/* LOGIN MODEL */
+
+button {
+  display: flex;
+  height: 2rem;
+  width: auto;
+  margin: 10px;
+  align-self: center;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  background-color: #e85d04;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+button:hover,
+focus {
+  background-color: #dc2f02;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container {
+  width: 400px;
+  height: auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 40px 30px;
+}
+
+.container .login-text {
+  color: #151c46;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  text-transform: capitalize;
+}
+
+.container .login-email .input-group {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 25px;
+  padding: 3px;
+}
+
+.container .login-email .input-group input {
+  width: 87%;
+  border: 2px solid #e7e7e7;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  background: transparent;
+  outline: none;
+  transition: 0.3s;
+}
+
+.container .login-email .input-group input:focus,
+.container .login-email .input-group input:valid {
+  border-color: #eb5c34;
+}
+
+/* .container .login-email .input-group .btn__login {
+  display: block;
+  width: 50%;
+  padding: 15px 20px;
+  text-align: center;
+  border: none;
+  background: #64bcbe;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+} */
+
+.container .login-email .input-group .btn:hover {
+  transform: translateY(-5px);
+  background: #64bcbe;
+}
+
+.login-register-text {
+  color: #151c46;
+  font-weight: 600;
+}
+
+.login-register-text a {
+  text-decoration: none;
+  color: #dc2f02;
+}
